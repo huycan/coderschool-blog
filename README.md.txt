@@ -16,8 +16,6 @@ URL: **Insert your Heroku URL here**
 
 The following **required** functionality is complete:
 
-> HINT: mark the items you completed with [x]
-
 * [x] User can create a new post, formatted using the Markdown language.
 * [x] User can edit an existing post.
 * [x] There is one post that introduces the App Creator with name, picture.
@@ -27,11 +25,9 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 * [x] There is a "navbar" that is responsive to window size similar to http://v4-alpha.getbootstrap.com/examples/navbar/. 
-* [ ] User can see how many views a post has. 
+* [x] User can see how many views a post has. 
 * [ ] User can leave a comment on a post.
 * [ ] User can add "tags" to a post, and filter posts by tag. 
-
-> HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
 
 ## Video Walkthrough 
 

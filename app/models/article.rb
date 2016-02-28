@@ -7,4 +7,8 @@ class Article < ActiveRecord::Base
     # where(:title, query) -> This would return an exact match of the query
     where("title like ?", "%#{query}%") 
   end
+
+  def view
+    update(impressions: (:impressions + 1))
+  end
 end
