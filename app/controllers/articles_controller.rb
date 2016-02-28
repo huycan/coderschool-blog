@@ -1,6 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-
+  
   # GET /articles
   # GET /articles.json
   def index
@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
   # GET /articles/1.json
   def show
     @article.update(impressions: (@article.impressions + 1))
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   end
 
   # GET /articles/new

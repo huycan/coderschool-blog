@@ -11,16 +11,19 @@
     </div>
   <% end %>
 
-  <div class="field">
+  <fieldset class='field form-group'>
     <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
+    <%= f.text_field :title, class: 'form-control' %>
+  </fieldset>
+  
+  <fieldset class="field form-group">
     <%= f.label :body %><br>
     <%= f.text_area :body, class: 'form-control', rows: 7 %>
-  </div>
+  </fieldset>
+
   <%= f.hidden_field :impressions, value: 0 %>
-  <div class="actions">
+  
+  <fieldset class="actions">
     <%= f.submit class: 'btn btn-primary' %>
-  </div>
+  </fieldset>
 <% end %>
