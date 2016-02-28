@@ -5,13 +5,34 @@
 
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js"></script>
 
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
 
+<header class='container'>
+  <nav class="navbar navbar-light bg-faded">  
+    <%= link_to 'Home', '/', class: 'btn btn-primary nav-item' %>
+    <%= link_to 'New Article', new_article_path, class: 'nav-item btn btn-primary' %>
+    
+    <!-- When submit the form, the view rendered will be the index view of our articles resource -->
+    <%= form_tag(articles_path, :method => "get", class: "form-inline pull-xs-right", id: "search-form") do %>
+      <%= text_field_tag :search, params[:search], class: "form-control", placeholder: "Search Articles" %>
+      <!-- In order to have the "search" icon int the button, we need to use plain HTML instead 
+           of using a Rails form helper -->
+      <button class="btn btn-success-outline" type="submit"><i class="fa fa-search"></i></button>
+    <% end %>
+  </nav>
+</header>
+
 <%= yield %>
+
+<footer class='container'>
+  <h5 style='text-align:center'>Copyright 2016. Hope you enjoy this little blog app!</h5>
+</footer>
 
 </body>
 </html>
