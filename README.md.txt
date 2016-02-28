@@ -6,7 +6,7 @@ Submitted by: Tran Duc Huy
 
 Time spent: 5 hours spent in total
 
-URL: **Insert your Heroku URL here**
+URL: https://cryptic-cove-14992.herokuapp.com/
 
 ## User Stories
 
@@ -28,10 +28,6 @@ The following **optional** features are implemented:
 ## Video Walkthrough 
 
 Here's a walkthrough of implemented user stories:
-
-> HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-> `![Video Walkthrough](walkthrough.gif)` 
-> 
 
 ![Video Walkthrough](./walkthrough.gif)
 
