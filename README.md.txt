@@ -1,9 +1,5 @@
 # Pre-work - Yet Another Blog
 
-> HINT: Please
-> - include this README.md in your project and fill out the information. 
-> - remove all the HINT blocks in this file.
-
 Yet Another Blog is a Ruby on Rails blog application.
 
 Submitted by: Tran Duc Huy
